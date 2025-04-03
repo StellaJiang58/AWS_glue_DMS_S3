@@ -9,8 +9,10 @@
 ### Solutions
 1. **Manually Insert Parameters:**
    Add the required parameters in the Job Parameters console.
+   <img width="598" alt="Screenshot 2025-04-03 at 3 52 37 PM" src="https://github.com/user-attachments/assets/de5a7dd3-394b-4fae-876c-6040efb8d842" />
+
    
-2. **Change Arguments in Code:**
+3. **Change Arguments in Code:**
    Change the arguments dictionary from:
    ```python
    Arguments = {
