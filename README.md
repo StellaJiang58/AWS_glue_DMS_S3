@@ -20,7 +20,6 @@
        '--s3_dst_folder': destination_folder
    }
    to
-    ```python
    Arguments = {
        'JOB_NAME': job_name,
        's3_fileName': file_name,
@@ -28,7 +27,7 @@
        's3_dst_folder': destination_folder
    }
 
-## Challenge 1: INVALID_ARGUMENT_ERROR
+## Challenge 2: NO LOGs FOUND in CLOUNDWATCH
 The glue job run successfully. But I didn't see the expected fild in S3 destination folder(dst_folder). And also didn't see logs in glue_logs folder.
 
 ### Solutions
