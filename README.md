@@ -1,16 +1,3 @@
-# AWS_glue_DMS_S3
-##Challenge 1 :Error Category: INVALID_ARGUMENT_ERROR; Failed Line Number: 10; GlueArgumentError: the following arguments are required: --s3_fileName, --s3_bucket, --s3_dst_folder
-Solution 1: Manually insert these three paramaters in Job Paramaters console.
-Solution 2: Change Arguments = {'--JOB_NAME': job_name,'--s3_fileName': file_name,'--s3_bucket': bucket_name,'--s3_dst_folder': destination_folder} to Arguments = {
-                'JOB_NAME': job_name,
-                's3_fileName': file_name,
-                's3_bucket': bucket_name,
-                's3_dst_folder': destination_folder
-            }
-I rerun glue job by these two solution. All successfully
-
-##Challenge 2:
-The glue job run successfully. But I didn't see the expected fild in S3 destination folder(dst_folder). And also didn't see logs in glue_logs folder.
 # AWS_Project
 
 ## Challenge 1: INVALID_ARGUMENT_ERROR
@@ -32,3 +19,17 @@ The glue job run successfully. But I didn't see the expected fild in S3 destinat
        '--s3_bucket': bucket_name,
        '--s3_dst_folder': destination_folder
    }
+   to
+    ```python
+   Arguments = {
+       'JOB_NAME': job_name,
+       's3_fileName': file_name,
+       's3_bucket': bucket_name,
+       's3_dst_folder': destination_folder
+   }
+
+## Challenge 1: INVALID_ARGUMENT_ERROR
+The glue job run successfully. But I didn't see the expected fild in S3 destination folder(dst_folder). And also didn't see logs in glue_logs folder.
+
+### Solutions
+
