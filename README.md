@@ -54,8 +54,6 @@
 
 before it shows success but after I rerun it, it show failed. So I didn't use this method
 
-Final solution, just directly assign the value for these variables.
+Final solution, just directly assign the value for these variables using boto3.
 
-### Challenge 2: Unexpected removing rows
-   The first three rows were removed for file startwith "LOAD"; and 1 row is remove from file not startwith "LOAD";
-   I didn't figure out this issue yet.
+
